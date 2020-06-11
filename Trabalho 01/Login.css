@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+  
+  body{
+     background-color: #bee4ec;
+     margin: 0,auto;
+  }
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 0.5px solid rgba(0,0,0,0.15);
+    border-radius: 0.3125em;
+    background: #f1f1f1;
+  }
+  div{
+      background-color: #92afb5;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 0.5px solid rgba(0,0,0,0.15);
+    border-radius: 0.3125em;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    background-color: #bee4ec;
+  }
+  
+  #tudo {
+      position: relative;
+  
+      }
+  
+  #rodape {
+      position: fixed;
+      bottom: 0;
+    margin-bottom: 0;
+      background-color: #92afb5;
+      width: 100%;
+      text-align: center;
+  }
+  
+  h1{
+      margin-top: 10px;
+      text-align: center;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+
+
+  .modal{
+    width: 40%; float:right; margin-right:40px;margin-bottom: 110px; margin-top:50px; 
+    border-radius: 0.3125em;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+  .modal0{
+    
+    width: 40%; float: left;margin-right: 10px; margin-left: 40px; margin-top: 50px; 
+  }
+ 
+  #img-logo-1{
+    display: block; 
+    height: 60px;
+    margin-left: 10px;
+  }

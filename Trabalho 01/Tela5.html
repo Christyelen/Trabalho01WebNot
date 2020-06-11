@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+    <link rel="stylesheet" type="text/css" href="Tela5.css" media="screen" />
+    <script type="text/javascript" src="Tela5.js"></script>
+</head>
+
+<body>
+    <div style="background-color: #92afb5;">
+        <img class="logo" id="img-logo-1" src="Imagens/Logo trabalho.png">
+        <div style="background-color: #92afb5; height: 60px;">
+            <label for="bt_menu" style="margin-left: 10px;">&#9776;</label>
+            <input type="checkbox" id="bt_menu">
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="Menu.html"> Menu Principal</a>
+                        <ul>
+                            <li><a href="Tela5.html">Vendas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Tela1.html">Eletromésticos</a></li>
+                    <li><a href="Tela2.html"> Móveis</a></li>
+                    <li><a href="Tela3.html">Acessórios</a></li>
+                    <li><a href="Tela4.html">Limpeza</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="tabela1">
+
+        <div>
+            <br>
+            <label class="" for="eletro" style="float: left;">Eletromésticos</label>
+            <label class="" for="quant" style=" margin-left: 40%;">Quantidade</label>
+            <br>
+            <select id="eletro" name="eletro">
+        <option value="" disabled selected>Selecione</option>
+        <option value="1">Fogão</option>
+        <option value="2">Microondas</option>
+        <option value="3">Liquidificador</option>
+        <option value="4">Geladeira</option>
+        <option value="5">Ventilador</option>
+        <option value="6">Televisão</option>
+        <option value="7">Computador</option>
+        <option value="8">Maquina de lavar</option>
+
+
+      </select>
+            <input id="txtQuant" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
+            <br>
+            <button id="btSalvar" onclick="PegarValorCombo('eletro')" style="float: left; margin-left: 50px;">Salvar</button>
+            <br>
+
+        </div>
+        <div>
+            <br>
+            <label class="" for="moveis" style="float: left;">Móveis</label>
+            <label class="" for="quant" style=" margin-left: 48%;">Quantidade</label>
+            <br>
+            <select id="moveis" name="moveis">
+        <option value="" disabled selected>Selecione</option>
+        <option value="1">Mesa</option>
+        <option value="2">Cama</option>
+        <option value="3">Escrivaninha</option>
+        <option value="4">Guarda-Roupas</option>
+        <option value="5">Bidê</option>
+        <option value="6">Sofá</option>
+        <option value="7">Audi</option>
+        <option value="8">Audi</option>
+      </select>
+            <input id="txtQuant2" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
+            <br>
+            <button id="btSalvar2" onclick="PegarValorCombo('moveis')" style="float: left; margin-left: 50px;">Salvar</button>
+            <br>
+        </div>
+        <div>
+            <br>
+            <label class="" for="acessorios" style="float: left;">Acessórios</label>
+            <label class="" for="quant" style=" margin-left: 44%;">Quantidade</label>
+            <br>
+            <select id="acessorios" name="acessorios">
+        <option value="" disabled selected>Selecione</option>
+        <option value="1">Talheres</option>
+        <option value="2">Jogo de Panelas</option>
+        <option value="3">Jogo de Potes</option>
+        <option value="4">Travesseiro</option>
+        <option value="5">Jogo de Copos</option>
+        <option value="6">Almofadas</option>
+        <option value="7">Jarra</option>
+        <option value="8">Vaso</option>
+      </select>
+            <input id="txtQuant3" class="form-control" type="number" placeholder="" style=" margin-left: 10%; width: 50px;">
+            <br>
+            <button id="btSalvar3" onclick="PegarValorCombo('acessorios')" style="float: left; margin-left: 50px;">Salvar</button>
+            <br>
+        </div>
+        <div>
+            <br>
+            <label class="" for="limpeza" style="float: left;">Limpeza</label>
+            <label class="" for="quant" style=" margin-left: 47%;">Quantidade</label>
+            <select id="limpeza" name="limpeza">
+        <option value="" disabled selected>Selecione</option>
+        <option value="1">Uau</option>
+        <option value="2">Veja</option>
+        <option value="3">Fresh</option>
+        <option value="4">Omo</option>
+        <option value="5">Pato</option>
+        <option value="6">Cif</option>
+        <option value="7">Casa</option>
+        <option value="8">Destac</option>
+      </select>
+            <input id="txtQuant4" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
+            <br>
+            <button id="btSalvar4" onclick="PegarValorCombo('limpeza')" style="float: left; margin-left: 50px;">Salvar</button>
+            <br>
+            <br>
+            <button id="limpar" onclick="limpar()" style="float: left; margin-top: 20px; margin-left: 50px; width: 250px;">Limpar produtos</button>
+
+            <br>
+        </div>
+    </div>
+
+    <table id="resultado" class="tabela">
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+
+
+    </table>
+
+
+
+    <div class="compraAndamento">
+        <label style="margin-left: 0;" for="frete">Frete</label>
+        <br>
+        <input style="margin-bottom: 10px;" id="frete" readonly="true" type="text">
+        <br>
+        <label style="margin-left: 0;" for="total">Total</label>
+        <br>
+        <input style="margin-bottom: 10px;" name="total" id="total" readonly="true" type="text">
+        <br>
+        <button id="btCompra" class="compra" onclick="realizarCompra()">Comprar</button>
+
+    </div>
+
+    <footer id="rodape" style="margin-top: 50px;">
+        <p style="margin-top: 8px; ">Papun<br>Christyelen Kramel e Vinicius Pereira Forte - 2020</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css" media="screen" />
+
+    <script>
+        var modal = document.getElementById('id01');
+
+        function abreMenu() {
+            window.location.href = "Menu.html"
+        }
+    </script>
+</head>
+
+<body>
+    <header style="background-color: #92afb5;" style="background-color: #92afb5;">
+        <a href="login.html">
+            <img style="background-color: #92afb5; " id="img-logo-1" src="Imagens/Logo trabalho.png" a>
+        </a>
+
+    </header>
+    <div id="#tudo" style="width: 100%;">
+        <div id="id01" class="modal0">
+
+            <form class="modal-content animate" action="Menu.html" method="post">
+
+
+                <div class="container">
+                    <div class="login">
+                        <h1>Login</h1>
+                    </div>
+                    <br>
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Insira o email" name="uname" required>
+
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" placeholder="Insira a senha" name="psw" required>
+                    <button type="submit">Confirmar</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div id="id02" class="modal">
+
+            <form class="modal-content animate" action="Menu.html" method="post" style="float: right;">
+                <h1>Não tem cadastro? Cadastre-se aqui</h1>
+                <div class="container">
+                    <label for="uname"><b>Nome</b></label>
+                    <input type="text" placeholder="Insira o nome" name="uname" required>
+
+                    <label for="uname"><b>Sobrenome</b></label>
+                    <input type="text" placeholder="Insira o sobrenome" name="uname" required>
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Insira o email" name="uname" required>
+
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" placeholder="Insira a senha" name="psw" required>
+
+                    <label for="uname"><b>Repita a senha</b></label>
+                    <input type="password" placeholder="Insira a senha" name="psw" required>
+
+                    <button type="submit">Concluido</button>
+            </form>
+
+            </div>
+        </div>
+        <footer id="rodape">
+            <p>Papun<br>Christyelen Kramel e Vinicius Pereira Forte - 2020</p>
+        </footer>
+
+</body>
+
+</html>
